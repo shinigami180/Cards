@@ -1,0 +1,104 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 100%;
+}
+
+body {
+  background-image: url(https://wallpaperaccess.com/full/1656029.jpg);
+  background-color: rgba(0,0,0,.1);
+	font-family:Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+.heading {
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.horde {
+  padding: 0 1em;
+	display: grid;
+	grid-gap: 2em;
+	margin: 2em auto;
+	max-width: 1140px;
+}
+
+@media all and (min-width: 768px) {
+	.horde {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media all and (min-width: 1140px) {
+	.horde {
+	grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+.hordy {
+  background-color: white;
+	padding: 1em;
+	border-radius: .5em;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hordy:hover {
+	box-shadow: 0 5px 13px rgba(0, 0, 0, 0.07);
+	transition: box-shadow .5s ease;
+}
+
+.hord-ing {
+  position: relative;
+	width: 100%;
+	padding-bottom: 50%;
+	height: 0;
+	overflow: hidden;
+}
+
+.hord-ing img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.card-title {
+  color: black;
+  margin: .5em 0;
+}
+
+.text {
+  color: black;
+  line-height: 1.6;
+	font-size: .85em;
+	margin-bottom: 1.5em;
+}
+
+a {
+	background: linear-gradient(to right, #0099F7, #F11712);
+	color: white;
+	text-decoration: none;
+	font-weight: 100;
+	padding: .5em 1em;
+	margin-bottom: 1em;
+	display: inline-block;
+	border-radius: 0 5px 20px rbga(0,0,0,.09);
+	width: 100%;
+	text-align: center;
+}
+
+@media all and (min-width: 768px) {
+	a	{
+		width: unset;
+	}
+}
